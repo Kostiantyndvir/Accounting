@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Accounting.MainPage"
+             Title="Головна">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start"
+            HorizontalOptions="Center">
+            <HorizontalStackLayout>
+                <DatePicker x:Name="dateStart" DateSelected="DisplayEvent"/>
+                <DatePicker x:Name="dateEnd" DateSelected="DisplayEvent"/>
+                <Button x:Name="b1"
+                    Text="+" FontSize="25" FontAttributes="Bold"
+                    HorizontalOptions="Center" Clicked="Add" Padding="0,0,0,0"/>
+            </HorizontalStackLayout>
+            <VerticalStackLayout
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                x:Name = "stack">
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

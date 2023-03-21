@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Accounting.AddPage"
+             Title="Додати">
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Start" Spacing="25">
+            <Button x:Name="b1"
+                Text="Назад" FontSize="20" FontAttributes="Bold"
+                HorizontalOptions="Center" Clicked="Back"/>
+                <Picker x:Name="ItemPicker" Title = "Що додати ?"
+                SelectedIndexChanged="PickerSelectedIndexChanged" HorizontalOptions="Center">
+                <Picker.Items>
+                    <x:String>Категорія</x:String>
+                    <x:String>Дохід</x:String>
+                    <x:String>Витрата</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <VerticalStackLayout x:Name="stack" HorizontalOptions="Center">
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
